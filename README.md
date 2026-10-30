@@ -49,8 +49,8 @@ their variances are not standardized. The input array is not modified.
 Defaults match the paper: `lambda1=0.03`, output threshold `0.3`, five
 continuation stages with initial `s=(1, 0.9, 0.8, 0.7, 0.6)` and
 `mu=(1, 0.1, 0.01, 0.001, 0.0001)`, and a six-hour fitting budget, excluding
-initial compilation. Reconstruction uses the BLOCK-FULL gate, pair threshold
-`0.05`, and the top eight candidates. Settings can be supplied through
+initial compilation. Reconstruction uses pair threshold `0.05` and the top eight
+candidates. Settings can be supplied through
 `Config`, for example `Config(lambda1=0.03, hot_cap_seconds=21600)`.
 
 The graph uses `abs(W) >= threshold`. Check `numerically_qualified` before
