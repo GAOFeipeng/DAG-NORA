@@ -1,0 +1,13 @@
+NORA
+
+This distribution includes code derived from DAGMA by Kevin Bello,
+Bryon Aragam, and Pradeep Ravikumar:
+https://github.com/kevinsbello/dagma
+
+The upstream continuation controller and Apache-2.0 license are retained
+in src/certfix3_rc6/_upstream. The numerical minimizer and reconstruction
+steps implement NORA; this distribution is not the unmodified DAGMA solver.
+
+The conditional-column solver, extended-precision numerical routines,
+and numerical certification code are retained from the authors' frozen
+implementation used in the paper experiments.

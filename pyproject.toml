@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dag-nora"
+version = "0.1.0"
+description = "DAG learning via exact node-wise reduction and pairwise reconstruction"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "src/certfix3_rc6/_upstream/LICENSE"]
+dependencies = [
+    "numpy>=2.0",
+    "scipy>=1.14",
+    "numba>=0.61",
+    "threadpoolctl>=3.5",
+    "tqdm>=4.0",
+]
+
+[project.urls]
+Repository = "https://github.com/GAOFeipeng/DAG-NORA"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.setuptools.package-data]
+certfix3_rc6 = ["native/*.c", "native/*.so", "_upstream/LICENSE"]
